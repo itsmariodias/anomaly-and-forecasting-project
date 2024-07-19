@@ -1,0 +1,24 @@
+{
+    "seed": 42,
+    "background_dataset_clusters": 10,
+    "n_neighbors": 250,
+    "feature_names": [
+        "TX_AMOUNT",
+        "IS_WEEKEND",
+        "IS_NIGHT",
+        "CUSTOMER_ID_NB_TX_1DAY_WINDOW",
+        "CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW",
+        "CUSTOMER_ID_NB_TX_7DAY_WINDOW",
+        "CUSTOMER_ID_AVG_AMOUNT_7DAY_WINDOW",
+        "CUSTOMER_ID_NB_TX_30DAY_WINDOW",
+        "CUSTOMER_ID_AVG_AMOUNT_30DAY_WINDOW",
+        "TERMINAL_ID_NB_TX_1DAY_WINDOW",
+        "TERMINAL_ID_RISK_1DAY_WINDOW",
+        "TERMINAL_ID_NB_TX_7DAY_WINDOW",
+        "TERMINAL_ID_RISK_7DAY_WINDOW",
+        "TERMINAL_ID_NB_TX_30DAY_WINDOW",
+        "TERMINAL_ID_RISK_30DAY_WINDOW"
+    ],
+    "output_name": "lof_scores",
+    "is_h2o": false
+}
