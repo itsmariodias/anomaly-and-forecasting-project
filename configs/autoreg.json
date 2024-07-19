@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 {
     "target": "Close",
     "lags": 28
+=======
+{
+    "target": "Close",
+    "lags": 28
+>>>>>>> 0e34c14 (Initial commit)
 }

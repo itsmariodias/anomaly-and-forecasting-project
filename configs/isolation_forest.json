@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "seed": 42,
     "background_dataset_clusters": 10,
@@ -22,4 +23,30 @@
     ],
     "output_name": "predict",
     "is_h2o": true
+=======
+{
+    "seed": 42,
+    "background_dataset_clusters": 10,
+    "ntrees": 100,
+    "sample_size": 256,
+    "feature_names": [
+        "TX_AMOUNT",
+        "IS_WEEKEND",
+        "IS_NIGHT",
+        "CUSTOMER_ID_NB_TX_1DAY_WINDOW",
+        "CUSTOMER_ID_AVG_AMOUNT_1DAY_WINDOW",
+        "CUSTOMER_ID_NB_TX_7DAY_WINDOW",
+        "CUSTOMER_ID_AVG_AMOUNT_7DAY_WINDOW",
+        "CUSTOMER_ID_NB_TX_30DAY_WINDOW",
+        "CUSTOMER_ID_AVG_AMOUNT_30DAY_WINDOW",
+        "TERMINAL_ID_NB_TX_1DAY_WINDOW",
+        "TERMINAL_ID_RISK_1DAY_WINDOW",
+        "TERMINAL_ID_NB_TX_7DAY_WINDOW",
+        "TERMINAL_ID_RISK_7DAY_WINDOW",
+        "TERMINAL_ID_NB_TX_30DAY_WINDOW",
+        "TERMINAL_ID_RISK_30DAY_WINDOW"
+    ],
+    "output_name": "predict",
+    "is_h2o": true
+>>>>>>> 0e34c14 (Initial commit)
 }
