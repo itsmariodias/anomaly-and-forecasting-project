@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 
 
@@ -61,6 +60,7 @@ def extract_forecast_features(data: pd.DataFrame) -> pd.DataFrame:
     data["Date"] = data["Date"].astype("int64") // 1e9
 
     return data
+
 
 def get_customer_features(df: pd.DataFrame, windows_size_in_days=[1, 7, 30]):
     # Let us first order transactions chronologically

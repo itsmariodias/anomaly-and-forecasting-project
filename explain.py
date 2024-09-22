@@ -9,14 +9,14 @@ def get_kernel_shap(
 
     # TODO Is is possible to save the explainer?
     explainer = shap.KernelExplainer(
-        model, background_dataset, seed=model_parameters.get("seed"), link="logit" #TODO figure link out
+        model, background_dataset, seed=model_parameters.get("seed"), link="identity" #TODO figure link out + svm not working with link logit
     )
 
     return explainer
 
 
 def generate_background_dataset(df: pd.DataFrame, model_parameters: dict):
-    background_df = shap.kmeans(
+    background_df = shap.kmeans( # TODO Get a more representative sample, e.g. Get 7 days consecutive, same day every month, samples of from different trends
         df[model_parameters["feature_names"]],
         model_parameters.get("background_dataset_clusters", 10),
     )
